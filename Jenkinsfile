@@ -9,7 +9,6 @@ pipeline {
     stages {
         stage("Checkout code") {
             steps {
-                container('jnlp') {
                 checkout scm
             }
         }
